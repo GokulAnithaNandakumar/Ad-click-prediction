@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 # Load the dataset from the CSV file
 data = pd.read_csv('ad_data5.csv')
 data.columns = ['age', 'gender', 'salary', 'label']
-# Replace gender strings with binary values
+# Replace gender with 0 and 1
 data.loc[data['gender'] == 'male', 'gender'] = 1
 data.loc[data['gender'] == 'female', 'gender'] = 0
 
