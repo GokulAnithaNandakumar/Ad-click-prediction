@@ -16,24 +16,24 @@ y = data['label']
 model = LogisticRegression()
 model.fit(x.values, y)
 
-# Collect user data
+# Input data
 age = int(input("Enter your age: "))
 gender = input("Enter your gender (male/female): ")
 salary = float(input("Enter your salary: "))
 
-# Preprocess user data
+# Gender label
 if gender == 'male':
     gender_encoded = 1
 else:
     gender_encoded = 0
 
-# Set feature names
+# Feature names
 x.columns = ['age', 'gender', 'salary']
 
-# Make a prediction using the loaded model
+# Prediction using the loaded model
 prediction = model.predict([[age, gender_encoded, salary]])
 
-# Display the prediction result to the user
+# Prediction result
 # if prediction[0] == 0:
 #     print("You are not likely to click the ad.")
 if prediction == 0:
@@ -41,13 +41,16 @@ if prediction == 0:
 else:
     print("You are likely to click the ad.")
 
-# Print the feature coefficients and intercept used by the model
+# Print the feature coefficients and intercept
 print(model.coef_)
 print(model.intercept_)
-print(['age', 'gender', 'salary'])
 
 # Re-fit the model with feature names
 model.fit(x.values, y)
+
+
+
+
 #Not:60,m,30;
 #Yes:18,f,11;
 #yes:53,m,153;
