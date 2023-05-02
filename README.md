@@ -2,6 +2,8 @@
 Ad click prediction with 3 parameters age, gender and salary
 
 This is the plot for salary vs age for the csv file
+
+
 ![Figure_1](https://user-images.githubusercontent.com/114865522/235683724-0a345d83-1ae4-405d-9d2f-d7dff80fd400.png)
 
 ALGORITHM:
