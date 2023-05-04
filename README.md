@@ -19,3 +19,5 @@ ALGORITHM:
 10. Display the prediction result to the user using if-else statement
 11. Print the feature weights and intercept values used by the model using coef_ and intercept_ methods on the model object
 12. Set the column names for X and re-fit the model with the feature names using fit() method on the model object with X and y as inputs.
+
+The given code is an example of a classification problem using logistic regression. The code fits a logistic regression model to the training data and uses it to predict the label.
